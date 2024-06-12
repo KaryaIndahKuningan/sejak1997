@@ -677,12 +677,26 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+/* Adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+  .hero-img .heroImg {
+    max-height: 400px;
+    /* Adjust height for tablets */
+  }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+  .hero-img .heroImg {
+  height: 300px;
+  }
+}
+
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
-
   .hero p {
     font-size: 18px;
     line-height: 24px;
