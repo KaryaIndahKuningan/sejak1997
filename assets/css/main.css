@@ -72,6 +72,8 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  display: flex;
+  align-items: center;
 }
 
 .header .logo {
@@ -125,12 +127,27 @@ h6 {
   .header .logo {
     order: 1;
   }
+  
+  .header .logo img {
+    max-height: 69px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: -150px;
+  }
 
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 20px;
   }
+
+    .hero-img .img-fluid {
+      max-width: 100%;
+      /* Ensure image does not exceed the container's width */
+      max-height: 300px;
+      /* Optional: Set a maximum height for better control */
+    }
 
   .header .navmenu {
     order: 3;
@@ -293,7 +310,7 @@ h6 {
 
   .navmenu {
     padding: 0;
-    z-index: 9997;
+    z-index: 9998;
   }
 
   .navmenu ul {
@@ -930,7 +947,6 @@ section,
 
 .events .event-item:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
 }
