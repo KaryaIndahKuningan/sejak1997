@@ -7,7 +7,8 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #dfe8e1; /* Background color for the entire website, including individual sections */
+  --nav-bg-color: white;
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #525D6B; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -71,7 +72,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--nav-bg-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -1020,6 +1021,8 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
+  background-color: white;
+  border-radius: 15px;
   box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 20px 30px;
 }
