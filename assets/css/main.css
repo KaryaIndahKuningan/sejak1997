@@ -915,7 +915,9 @@ section,
   font-weight: 700;
   color: var(--accent-color);
 }
-
+.menu-img {
+  border-radius: 15px;
+}
 .menu .tab-content .menu-item {
   text-align-last: center;
 }
